@@ -2,6 +2,8 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 SET(CMAKE_CXX_STANDARD 11)
 
+set(CMAKE_BUILD_TYPE Debug)
+
 ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(spreadsheet main.cpp spreadsheet.cpp)
