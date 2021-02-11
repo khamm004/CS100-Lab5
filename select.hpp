@@ -30,7 +30,9 @@ public:
     }
 
     virtual bool select(const Spreadsheet* sheet, int row) const
-    {
+    {	if (column==-1){
+		return false;
+	}
         return select(sheet->cell_data(row, column));
     }
 
