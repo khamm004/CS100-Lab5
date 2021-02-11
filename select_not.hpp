@@ -18,5 +18,6 @@ class Select_Not : public Select {
         {
                 return !operand->select(sheet, row);
         }
+	virtual ~Select_Not(){delete operand;}
 };
 #endif

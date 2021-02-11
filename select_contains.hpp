@@ -19,6 +19,7 @@ class Select_Contains : public Select_Column {
      			}
    			return false;
                  }
+		virtual ~Select_Contains()=default;
 };
 
 #endif // __SELECT_CONTAINS_HPP__

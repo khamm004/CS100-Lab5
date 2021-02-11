@@ -20,5 +20,6 @@ class Select_And : public Select {
     	{	
 		return left->select(sheet, row) && right->select(sheet, row);
     	}
+	virtual ~Select_And(){delete right; delete left;}
 };
 #endif

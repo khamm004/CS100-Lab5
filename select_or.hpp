@@ -20,5 +20,6 @@ class Select_Or : public Select {
         {
                 return left->select(sheet, row) || right->select(sheet, row);
         }
+	virtual ~Select_Or(){delete right; delete left;}
 };
 #endif
